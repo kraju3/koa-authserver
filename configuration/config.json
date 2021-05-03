@@ -1,0 +1,19 @@
+{
+  "logger": {
+    "appenders": {
+      "development": {
+        "type": "stdout"
+      },
+      "production": {
+        "type": "file",
+        "filename": "userServer.log"
+      }
+    },
+    "categories": {
+      "default": {
+        "appenders": ["development", "production"],
+        "level": "debug"
+      }
+    }
+  }
+}

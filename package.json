@@ -1,0 +1,43 @@
+{
+  "name": "koa-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "koa",
+    "mongodb"
+  ],
+  "author": "Kiran Raju",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^10.0.0",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-compose": "^4.1.0",
+    "koa-logger": "^3.2.1",
+    "koa-session": "^6.2.0",
+    "log4js": "^6.3.0",
+    "mongoose": "^5.12.6",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-koa": "^2.0.2",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "mocha": "^8.3.2",
+    "nodemon": "^2.0.7",
+    "should": "^13.2.3",
+    "supertest": "^6.1.3"
+  }
+}

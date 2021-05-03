@@ -1,0 +1,30 @@
+@host=http://localhost:4000/api/v2/user
+@accessToken=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RfdXNlcjEiLCJpYXQiOjE2MjAwODM0MDgsImV4cCI6MTYyMDA4NTIwOH0.TakXfCalmQrg9b5f42qhflzpFjr7sM2rGHjAk14-Qgc
+### Login request call
+POST {{host}}/login HTTP/1.1
+content-type: application/json
+
+{
+    "userName":"test_user1",
+    "password":"Banfield@123"
+}
+
+
+###Registration request call
+
+POST {{host}}/register HTTP/1.1
+content-type:application/json
+
+{
+    "userName":"test_user1",
+    "password":"Banfield@123",
+    "firstname":"Testify",
+    "lastname":"User",
+    "email":"testuser@test.com",
+    "phoneNumber":"708-999-9696"
+}
+
+
+####Deleting a user request call
+POST {{host}}/crud/delete HTTP/1.1
+Authorization:{{accessToken}}

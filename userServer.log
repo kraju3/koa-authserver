@@ -1,0 +1,238 @@
+[2021-04-29T16:44:16.310] [INFO] default - Server started at port 3000
+[2021-04-29T16:44:24.087] [INFO] default - Connected to the User Collection
+[2021-04-29T16:45:34.920] [INFO] default - Server started at port 3000
+[2021-04-29T16:45:35.487] [INFO] default - Connected to the User Collection
+[2021-04-29T16:47:28.675] [INFO] default - Server started at port 3000
+[2021-04-29T16:47:29.208] [INFO] default - Connected to the User Collection
+[2021-04-29T16:47:48.292] [INFO] default - Server started at port 3000
+[2021-04-29T16:47:48.837] [INFO] default - Connected to the User Collection
+[2021-04-29T16:48:02.860] [INFO] default - Server started at port 3000
+[2021-04-29T16:48:02.868] [ERROR] default - Error connecting to the database
+[2021-04-29T16:49:06.651] [INFO] default - Server started at port 3000
+[2021-04-29T16:49:07.170] [INFO] default - Connected to the User Collection
+[2021-04-29T16:49:55.463] [INFO] default - Server started at port 3000
+[2021-04-29T16:49:56.720] [INFO] default - Connected to the User Collection
+[2021-04-29T16:57:06.399] [INFO] default - Server started at port 3000
+[2021-04-29T16:57:07.311] [INFO] default - Connected to the User Collection
+[2021-04-30T00:45:01.561] [INFO] default - Server started at port 3000
+[2021-04-30T00:45:02.834] [INFO] default - Connected to the User Collection
+[2021-04-30T00:45:16.253] [INFO] default - Server started at port 3000
+[2021-04-30T00:45:16.987] [INFO] default - Connected to the User Collection
+[2021-04-30T00:45:50.819] [INFO] default - Server started at port 3000
+[2021-04-30T00:45:51.502] [INFO] default - Connected to the User Collection
+[2021-04-30T00:50:48.501] [INFO] default - Server started at port 3000
+[2021-04-30T00:50:49.109] [INFO] default - Connected to the User Collection
+[2021-04-30T00:51:24.097] [ERROR] default - BadRequestError: User data is not valid
+    at Object.throw (C:\Users\kr_319696\Desktop\POC\KoaProject\node_modules\koa\lib\context.js:97:11)
+    at validationMiddleWare (C:\Users\kr_319696\Desktop\POC\KoaProject\middlewares\registration.middleware.js:14:14)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async errorCatching (C:\Users\kr_319696\Desktop\POC\KoaProject\middlewares\error.middleware.js:6:7) {
+  errors: [ 'Username should not contain any spaces' ]
+}
+[2021-04-30T00:54:53.457] [INFO] default - Server started at port 3000
+[2021-04-30T00:54:54.055] [INFO] default - Connected to the User Collection
+[2021-04-30T00:55:57.104] [INFO] default - Server started at port 3000
+[2021-04-30T00:55:57.762] [INFO] default - Connected to the User Collection
+[2021-04-30T00:57:32.971] [INFO] default - Server started at port 3000
+[2021-04-30T00:57:33.736] [INFO] default - Connected to the User Collection
+[2021-04-30T01:05:09.506] [INFO] default - Server started at port 3000
+[2021-04-30T01:05:10.130] [INFO] default - Connected to the User Collection
+[2021-04-30T01:06:14.842] [INFO] default - Server started at port 3000
+[2021-04-30T01:06:16.084] [INFO] default - Connected to the User Collection
+[2021-04-30T01:10:39.560] [INFO] default - Server started at port 3000
+[2021-04-30T01:10:40.156] [INFO] default - Connected to the User Collection
+[2021-04-30T01:10:54.027] [ERROR] default - Cannot find the user by username
+[2021-04-30T01:12:08.112] [ERROR] default - Cannot find the user by username
+[2021-04-30T01:15:26.824] [INFO] default - Server started at port 3000
+[2021-04-30T01:15:27.557] [INFO] default - Connected to the User Collection
+[2021-04-30T01:17:07.211] [DEBUG] default - TypeError: User.createUser is not a function
+    at registerUser (C:\Users\kr_319696\Desktop\POC\KoaProject\middlewares\registration.middleware.js:39:16)
+    at dispatch (C:\Users\kr_319696\Desktop\POC\KoaProject\node_modules\koa-compose\index.js:42:32)
+    at userExist (C:\Users\kr_319696\Desktop\POC\KoaProject\middlewares\registration.middleware.js:27:14)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2021-04-30T01:18:46.805] [INFO] default - Server started at port 3000
+[2021-04-30T01:18:47.767] [INFO] default - Connected to the User Collection
+[2021-04-30T01:19:09.027] [INFO] default - Creating the user in the database
+[2021-04-30T01:21:09.490] [INFO] default - Server started at port 3000
+[2021-04-30T01:21:10.197] [INFO] default - Connected to the User Collection
+[2021-04-30T01:29:13.932] [INFO] default - Server started at port 3000
+[2021-04-30T01:29:14.596] [INFO] default - Connected to the User Collection
+[2021-04-30T01:30:26.377] [INFO] default - Server started at port 3000
+[2021-04-30T01:30:27.043] [INFO] default - Connected to the User Collection
+[2021-04-30T01:30:37.813] [INFO] default - Server started at port 3000
+[2021-04-30T01:30:38.400] [INFO] default - Connected to the User Collection
+[2021-04-30T01:32:25.069] [INFO] default - Server started at port 3000
+[2021-04-30T01:32:25.686] [INFO] default - Connected to the User Collection
+[2021-04-30T01:33:53.069] [INFO] default - Server started at port 3000
+[2021-04-30T01:33:53.724] [INFO] default - Connected to the User Collection
+[2021-04-30T01:35:06.037] [INFO] default - Server started at port 3000
+[2021-04-30T01:35:06.699] [INFO] default - Connected to the User Collection
+[2021-04-30T01:36:40.947] [INFO] default - Server started at port 3000
+[2021-04-30T01:36:41.632] [INFO] default - Connected to the User Collection
+[2021-04-30T11:12:34.101] [INFO] default - Server started at port 3000
+[2021-04-30T11:12:34.679] [INFO] default - Connected to the User Collection
+[2021-04-30T11:15:16.713] [INFO] default - Server started at port 3000
+[2021-04-30T11:15:17.240] [INFO] default - Connected to the User Collection
+[2021-04-30T13:02:39.590] [INFO] default - Server started at port 3000
+[2021-04-30T13:02:40.149] [INFO] default - Connected to the User Collection
+[2021-04-30T13:04:13.619] [ERROR] default - BadRequestError: User data is not valid
+    at Object.throw (C:\Users\kr_319696\Desktop\POC\KoaProject\node_modules\koa\lib\context.js:97:11)
+    at validationMiddleWare (C:\Users\kr_319696\Desktop\POC\KoaProject\middlewares\registration.middleware.js:14:14)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async errorCatching (C:\Users\kr_319696\Desktop\POC\KoaProject\middlewares\error.middleware.js:6:7) {
+  errors: undefined
+}
+[2021-04-30T13:05:13.424] [INFO] default - Server started at port 3000
+[2021-04-30T13:05:14.025] [INFO] default - Connected to the User Collection
+[2021-04-30T13:07:22.283] [INFO] default - Server started at port 3000
+[2021-04-30T13:07:22.968] [INFO] default - Connected to the User Collection
+[2021-04-30T13:09:00.100] [INFO] default - Creating the user in the database
+[2021-04-30T13:10:55.891] [INFO] default - Server started at port 3000
+[2021-04-30T13:10:56.486] [INFO] default - Connected to the User Collection
+[2021-04-30T13:11:34.933] [INFO] default - Creating the user in the database
+[2021-04-30T13:12:09.964] [INFO] default - Server started at port 3000
+[2021-04-30T13:12:10.591] [INFO] default - Connected to the User Collection
+[2021-04-30T13:12:39.528] [INFO] default - Creating the user in the database
+[2021-04-30T14:25:41.836] [INFO] default - Server started at port 3000
+[2021-04-30T14:25:42.502] [INFO] default - Connected to the User Collection
+[2021-04-30T14:26:11.750] [ERROR] default - BadRequestError: User data is not valid
+    at Object.throw (C:\Users\kr_319696\Desktop\POC\KoaProject\node_modules\koa\lib\context.js:97:11)
+    at validationMiddleWare (C:\Users\kr_319696\Desktop\POC\KoaProject\middlewares\registration.middleware.js:17:14)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async errorCatching (C:\Users\kr_319696\Desktop\POC\KoaProject\middlewares\error.middleware.js:6:7) {
+  errors: undefined
+}
+[2021-04-30T14:28:37.260] [ERROR] default - BadRequestError: User data is not valid
+    at Object.throw (C:\Users\kr_319696\Desktop\POC\KoaProject\node_modules\koa\lib\context.js:97:11)
+    at validationMiddleWare (C:\Users\kr_319696\Desktop\POC\KoaProject\middlewares\registration.middleware.js:17:14)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async errorCatching (C:\Users\kr_319696\Desktop\POC\KoaProject\middlewares\error.middleware.js:6:7) {
+  errors: undefined
+}
+[2021-04-30T14:31:03.763] [INFO] default - Server started at port 3000
+[2021-04-30T14:31:04.428] [INFO] default - Connected to the User Collection
+[2021-04-30T14:31:17.322] [ERROR] default - BadRequestError: User data is not valid
+    at Object.throw (C:\Users\kr_319696\Desktop\POC\KoaProject\node_modules\koa\lib\context.js:97:11)
+    at validationMiddleWare (C:\Users\kr_319696\Desktop\POC\KoaProject\middlewares\registration.middleware.js:16:14)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async errorCatching (C:\Users\kr_319696\Desktop\POC\KoaProject\middlewares\error.middleware.js:6:7) {
+  errors: [ 'Phone number is in an invalid format' ]
+}
+[2021-04-30T14:32:45.767] [INFO] default - Server started at port 3000
+[2021-04-30T14:32:46.430] [INFO] default - Connected to the User Collection
+[2021-04-30T14:32:58.900] [ERROR] default - BadRequestError: User data is not valid
+    at Object.throw (C:\Users\kr_319696\Desktop\POC\KoaProject\node_modules\koa\lib\context.js:97:11)
+    at validationMiddleWare (C:\Users\kr_319696\Desktop\POC\KoaProject\middlewares\registration.middleware.js:17:14)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async errorCatching (C:\Users\kr_319696\Desktop\POC\KoaProject\middlewares\error.middleware.js:6:7) {
+  errors: [ 'Phone number is in an invalid format' ]
+}
+[2021-04-30T14:33:13.928] [INFO] default - Server started at port 3000
+[2021-04-30T14:33:14.583] [INFO] default - Connected to the User Collection
+[2021-04-30T14:36:18.347] [INFO] default - Server started at port 3000
+[2021-04-30T14:36:19.050] [INFO] default - Connected to the User Collection
+[2021-04-30T14:36:31.832] [INFO] default - Server started at port 3000
+[2021-04-30T14:36:32.446] [INFO] default - Connected to the User Collection
+[2021-04-30T14:36:56.814] [ERROR] default - BadRequestError: User data is not valid
+    at Object.throw (C:\Users\kr_319696\Desktop\POC\KoaProject\node_modules\koa\lib\context.js:97:11)
+    at validationMiddleWare (C:\Users\kr_319696\Desktop\POC\KoaProject\middlewares\registration.middleware.js:18:14)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async errorCatching (C:\Users\kr_319696\Desktop\POC\KoaProject\middlewares\error.middleware.js:6:7) {
+  errors: [ 'Phone number is in an invalid format' ]
+}
+[2021-04-30T14:37:17.191] [INFO] default - Server started at port 3000
+[2021-04-30T14:37:17.788] [INFO] default - Connected to the User Collection
+[2021-04-30T14:38:09.449] [INFO] default - Server started at port 3000
+[2021-04-30T14:38:10.060] [INFO] default - Connected to the User Collection
+[2021-04-30T14:38:33.963] [ERROR] default - DatabaseError {
+  message: 'User already exists',
+  status: 500,
+  name: 'Database Exception'
+}
+[2021-04-30T14:51:56.390] [INFO] default - Server started at port 3000
+[2021-04-30T14:51:56.984] [INFO] default - Connected to the User Collection
+[2021-04-30T14:52:27.518] [ERROR] default - Database Exception: 500 undefined
+[2021-04-30T14:53:08.638] [INFO] default - Server started at port 3000
+[2021-04-30T14:53:09.206] [INFO] default - Connected to the User Collection
+[2021-04-30T14:53:16.196] [ERROR] default - Database Exception: 500 User already exists
+[2021-04-30T14:55:16.988] [INFO] default - Server started at port 3000
+[2021-04-30T14:55:17.620] [INFO] default - Connected to the User Collection
+[2021-04-30T14:55:25.236] [ERROR] default - Database Exception:500-{message: User already exists}
+[2021-04-30T14:57:18.809] [INFO] default - Server started at port 3000
+[2021-04-30T14:57:19.391] [INFO] default - Connected to the User Collection
+[2021-04-30T14:57:29.268] [INFO] default - Server started at port 3000
+[2021-04-30T14:57:29.833] [INFO] default - Connected to the User Collection
+[2021-04-30T14:57:42.062] [INFO] default - Server started at port 3000
+[2021-04-30T14:57:42.655] [INFO] default - Connected to the User Collection
+[2021-04-30T15:00:44.302] [INFO] default - Server started at port 3000
+[2021-04-30T15:00:44.898] [INFO] default - Connected to the User Collection
+[2021-04-30T15:01:08.464] [ERROR] default - DatabaseException:500-{message: User already exists}
+[2021-05-03T11:39:30.684] [INFO] default - Server started at port 3000
+[2021-05-03T11:39:31.211] [INFO] default - Connected to the User Collection
+[2021-05-03T11:41:33.315] [INFO] default - Server started at port 3000
+[2021-05-03T11:41:33.947] [INFO] default - Connected to the User Collection
+[2021-05-03T11:42:00.675] [INFO] default - Creating the user in the database
+[2021-05-03T11:42:48.765] [ERROR] default - Cannot find the user by username
+[2021-05-03T11:42:48.766] [ERROR] default - DatabaseException:500-{message: Error getting the User with the userName -- CastError: Cast to string failed for value "{ userName: 'test_user' }" at path "userName" for model "users"}
+[2021-05-03T11:43:56.135] [INFO] default - Server started at port 3000
+[2021-05-03T11:43:56.695] [INFO] default - Connected to the User Collection
+[2021-05-03T11:50:01.978] [INFO] default - Server started at port 3000
+[2021-05-03T11:50:02.524] [INFO] default - Connected to the User Collection
+[2021-05-03T11:50:47.253] [ERROR] default - CustomException:500-{message: Password is invalid}
+[2021-05-03T11:55:23.766] [INFO] default - Server started at port 3000
+[2021-05-03T11:55:24.308] [INFO] default - Connected to the User Collection
+[2021-05-03T11:56:11.402] [INFO] default - Server started at port 3000
+[2021-05-03T11:56:11.995] [INFO] default - Connected to the User Collection
+[2021-05-03T11:56:32.202] [INFO] default - Server started at port 3000
+[2021-05-03T11:56:32.738] [INFO] default - Connected to the User Collection
+[2021-05-03T17:17:24.918] [INFO] default - Server started at port 3000
+[2021-05-03T17:17:25.518] [INFO] default - Connected to the User Collection
+[2021-05-03T17:18:41.532] [ERROR] default - CustomException:500-{message: Password is invalid}
+[2021-05-03T17:19:47.215] [INFO] default - Server started at port 3000
+[2021-05-03T17:19:47.783] [INFO] default - Connected to the User Collection
+[2021-05-03T17:30:45.606] [INFO] default - Server started at port 3000
+[2021-05-03T17:30:46.233] [INFO] default - Connected to the User Collection
+[2021-05-03T17:31:31.255] [ERROR] default - CustomException:500-{message: Invalid token}
+[2021-05-03T17:33:13.537] [ERROR] default - CustomException:500-{message: Invalid token}
+[2021-05-03T17:34:19.001] [ERROR] default - CustomException:500-{message: Invalid token}
+[2021-05-03T17:35:11.456] [INFO] default - Server started at port 3000
+[2021-05-03T17:35:12.040] [INFO] default - Connected to the User Collection
+[2021-05-03T17:35:25.488] [ERROR] default - CustomException:500-{message: User is not defined}
+[2021-05-03T17:37:02.783] [INFO] default - Server started at port 3000
+[2021-05-03T17:37:03.379] [INFO] default - Connected to the User Collection
+[2021-05-03T17:37:17.421] [ERROR] default - CustomException:500-{message: User is not defined}
+[2021-05-03T17:38:09.162] [ERROR] default - CustomException:500-{message: User is not defined}
+[2021-05-03T17:40:08.114] [INFO] default - Server started at port 3000
+[2021-05-03T17:40:08.733] [INFO] default - Connected to the User Collection
+[2021-05-03T17:40:35.686] [INFO] default - Deleting the user {
+  _id: 609027d877632e3694c7181a,
+  userName: 'test_user',
+  password: '$2b$10$RdAod7R.bYwTqYG/TESAd.yU.aAAaj7t6L8nptytEKuV0MRRRCJzq',
+  firstname: 'Test',
+  lastname: 'User',
+  email: 'testuser@test.com',
+  phoneNumber: '708-717-7432',
+  __v: 0
+}
+[2021-05-03T17:41:13.979] [INFO] default - Server started at port 3000
+[2021-05-03T17:41:14.577] [INFO] default - Connected to the User Collection
+[2021-05-03T17:42:22.971] [ERROR] default - CustomException:500-{message: User was not found in the database}
+[2021-05-03T17:43:22.338] [INFO] default - Server started at port 3000
+[2021-05-03T17:43:22.938] [INFO] default - Connected to the User Collection
+[2021-05-03T17:45:00.683] [INFO] default - Server started at port 3000
+[2021-05-03T17:45:01.313] [INFO] default - Connected to the User Collection
+[2021-05-03T17:52:02.538] [INFO] default - Server started at port 3000
+[2021-05-03T17:52:03.120] [INFO] default - Connected to the User Collection
+[2021-05-03T17:52:07.835] [INFO] default - Server started at port 3000
+[2021-05-03T17:52:08.377] [INFO] default - Connected to the User Collection
+[2021-05-03T17:52:17.641] [INFO] default - Server started at port 3000
+[2021-05-03T17:52:18.197] [INFO] default - Connected to the User Collection
+[2021-05-03T17:55:36.941] [INFO] default - Server started at port 3000
+[2021-05-03T17:55:37.497] [INFO] default - Connected to the User Collection
+[2021-05-03T17:56:16.571] [INFO] default - Server started at port 3000
+[2021-05-03T17:56:17.182] [INFO] default - Connected to the User Collection
+[2021-05-03T17:57:29.448] [INFO] default - Server started at port 3000
+[2021-05-03T17:57:29.982] [INFO] default - Connected to the User Collection
+[2021-05-03T17:57:48.124] [ERROR] default - CustomException:500-{message: jwt expired}
+[2021-05-03T18:09:13.015] [INFO] default - Creating the user in the database
+[2021-05-03T18:12:22.273] [INFO] default - Deleting the user test_user1
