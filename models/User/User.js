@@ -21,7 +21,7 @@ const UserSchema = new mongoose.Schema({
   },
 });
 
-UserSchema.statics.updateUser = async (updatedInfo) => {
+UserSchema.statics.updateUser = async function (updatedInfo) {
   try {
     const { userName, ...restOfUserInfo } = updatedInfo;
     logger.info("Updating the User");

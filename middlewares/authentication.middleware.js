@@ -18,6 +18,7 @@ const {
 const { CustomException } = require("../lib/customExceptions");
 const { HttpStatus, JWT_SECRET } = require("../lib/helpers/constants");
 const User = require("../models/User/User");
+const { responseBody } = require("../lib/helpers/util");
 
 //Middleware to check if the userExists in the database
 const getUser = async (ctx, next) => {
@@ -30,7 +31,7 @@ const getUser = async (ctx, next) => {
     await next();
   } else {
     ctx.status = HttpStatus.BADREQUEST;
-    ctx.body = `The user does not exist`;
+    ctx.body = responseBody(`The user does not exist`);
   }
 };
 
@@ -44,11 +45,13 @@ const comparePassword = async (ctx, next) => {
       await next();
     } else {
       ctx.status = HttpStatus.BADREQUEST;
-      ctx.body = `The user credentials you provided are incorrect`;
+      ctx.body = responseBody(
+        `The user credentials you provided are incorrect`
+      );
     }
   } catch (err) {
     ctx.status = HttpStatus.INTERNALSERVER;
-    ctx.body = `${err.message ?? "Token invalid"}`;
+    ctx.body = responseBody(`${err.message ?? "Token invalid"}`);
     throw new CustomException("Password is invalid", HttpStatus.INTERNALSERVER);
   }
 };
@@ -66,7 +69,7 @@ const generateToken = async (ctx, next) => {
     await next();
   } catch (err) {
     ctx.status = HttpStatus.INTERNALSERVER;
-    ctx.body = `${err}`;
+    ctx.body = responseBody(`${err.message ?? "Error generating token"}`);
     throw new CustomException("Error while creating JWT token", 500);
   }
 };
@@ -81,12 +84,14 @@ const verifyToken = async (ctx, next) => {
       await next();
     } else {
       ctx.status = HttpStatus.UNAUTHORIZED;
-      ctx.body = "Invalid token please try again with a valid token";
+      ctx.body = responseBody(
+        "Invalid token please try again with a valid token"
+      );
       throw new CustomException("Invalid token", HttpStatus.UNAUTHORIZED);
     }
   } catch (err) {
     ctx.status = HttpStatus.INTERNALSERVER;
-    ctx.body = err.message ?? "Invalid token";
+    ctx.body = responseBody(err.message ?? "Invalid token");
     throw new CustomException(err.message, HttpStatus.INTERNALSERVER);
   }
 };

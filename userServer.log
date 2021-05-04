@@ -285,3 +285,45 @@
 [2021-05-03T20:06:28.697] [INFO] default - Connected to the User Collection
 [2021-05-03T20:07:53.626] [INFO] default - Creating the user in the database
 [2021-05-03T20:09:07.197] [INFO] default - Deleting the user test_user
+[2021-05-04T16:13:28.055] [INFO] default - Server started at port 4000
+[2021-05-04T16:13:28.619] [INFO] default - Connected to the User Collection
+[2021-05-04T16:16:13.371] [ERROR] default - DatabaseException:500-{message: User already exists}
+[2021-05-04T16:18:19.078] [INFO] default - Deleting the user test_user
+[2021-05-04T16:21:35.643] [INFO] default - Updating the User
+[2021-05-04T16:21:35.644] [ERROR] default - Error updating the User-->User not found
+[2021-05-04T16:21:35.645] [ERROR] default - CustomException:500-{message: TypeError: this.findOneAndUpdate is not a function---> ERROR-- Updating the user information}
+[2021-05-04T16:24:28.874] [INFO] default - Updating the User
+[2021-05-04T16:24:28.876] [ERROR] default - Error updating the User-->User not found
+[2021-05-04T16:24:28.877] [ERROR] default - CustomException:500-{message: TypeError: this.findOneAndUpdate is not a function---> ERROR-- Updating the user information}
+[2021-05-04T16:27:20.226] [INFO] default - Server started at port 4000
+[2021-05-04T16:27:20.804] [INFO] default - Connected to the User Collection
+[2021-05-04T16:27:33.030] [INFO] default - Updating the User
+[2021-05-04T16:27:33.031] [ERROR] default - Error updating the User-->User not found
+[2021-05-04T16:27:33.033] [ERROR] default - CustomException:500-{message: TypeError: this.updateOne is not a function---> ERROR-- Updating the user information}
+[2021-05-04T16:28:07.350] [INFO] default - Updating the User
+[2021-05-04T16:28:39.658] [ERROR] default - Error updating the User-->User not found
+[2021-05-04T16:28:39.659] [ERROR] default - CustomException:500-{message: TypeError: this.updateOne is not a function---> ERROR-- Updating the user information}
+[2021-05-04T16:30:21.192] [INFO] default - Server started at port 4000
+[2021-05-04T16:30:21.805] [INFO] default - Connected to the User Collection
+[2021-05-04T16:30:29.111] [INFO] default - Updating the User
+[2021-05-04T16:31:27.883] [INFO] default - Server started at port 4000
+[2021-05-04T16:31:28.452] [INFO] default - Connected to the User Collection
+[2021-05-04T16:31:36.237] [INFO] default - Updating the User
+[2021-05-04T16:32:15.853] [ERROR] default - CustomException:500-{message: User did not update successfully}
+[2021-05-04T16:32:26.357] [INFO] default - Creating the user in the database
+[2021-05-04T16:33:20.285] [INFO] default - Updating the User
+[2021-05-04T16:34:28.690] [ERROR] default - CustomException:500-{message: Cannot update the username}
+[2021-05-04T16:44:44.341] [INFO] default - Server started at port 4000
+[2021-05-04T16:44:44.987] [INFO] default - Connected to the User Collection
+[2021-05-04T16:44:59.787] [ERROR] default - CustomException:500-{message: User update data is not valid}
+[2021-05-04T16:45:53.328] [ERROR] default - CustomException:500-{message: User update data is not valid}
+[2021-05-04T16:47:04.963] [INFO] default - Server started at port 4000
+[2021-05-04T16:47:05.478] [INFO] default - Connected to the User Collection
+[2021-05-04T16:47:11.481] [ERROR] default - CustomException:500-{message: User update data is not valid}
+[2021-05-04T16:48:51.972] [ERROR] default - CustomException:500-{message: User update data is not valid}
+[2021-05-04T16:49:39.675] [INFO] default - Server started at port 4000
+[2021-05-04T16:49:40.291] [INFO] default - Connected to the User Collection
+[2021-05-04T16:49:51.472] [ERROR] default - CustomException:500-{message: Invalid data}
+[2021-05-04T16:50:56.774] [INFO] default - Server started at port 4000
+[2021-05-04T16:50:57.746] [INFO] default - Connected to the User Collection
+[2021-05-04T16:51:40.363] [INFO] default - Updating the User

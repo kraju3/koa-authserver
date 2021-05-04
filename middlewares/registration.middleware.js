@@ -3,17 +3,18 @@ const bcrypt = require("bcrypt");
 const { DatabaseError, CustomException } = require("../lib/customExceptions");
 const { HttpStatus, SALT_ROUNDS } = require("../lib/helpers/constants");
 const User = require("../models/User/User");
-const userValidationSchema = require("../models/validations/user.validations");
+const { userValidations } = require("../models/validations/user.validations");
+const { responseBody } = require("../lib/helpers/util");
 
 const validationMiddleWare = async (ctx, next) => {
   let userInfo = ctx.request.body;
 
   try {
-    userInfo = await userValidationSchema.validate(userInfo);
+    userInfo = await userValidations.validate(userInfo);
     ctx.state.userInfo = userInfo;
   } catch (validationErrors) {
     ctx.status = HttpStatus.BADREQUEST;
-    ctx.body = JSON.stringify({ errors: validationErrors.errors });
+    ctx.body = responseBody({ errors: validationErrors.errors });
     ctx.throw(HttpStatus.BADREQUEST, "User data is not valid", {
       errors: validationErrors.errors,
     });
@@ -29,9 +30,7 @@ const userExist = async (ctx, next) => {
 
   if (isUser) {
     ctx.status = HttpStatus.BADREQUEST;
-    ctx.body = JSON.stringify({
-      message: "User already exists",
-    });
+    ctx.body = responseBody("User already exists");
     throw new DatabaseError("User already exists");
   } else {
     return next();
@@ -49,7 +48,7 @@ const hashPassword = async (ctx, next) => {
     await next();
   } catch (err) {
     ctx.status = HttpStatus.INTERNALSERVER;
-    ctx.body = err.messaage ?? `${err}`;
+    ctx.body = responseBody(err.messaage ?? `${err}`);
     throw new CustomException(`Hashing Password gone wrong`, 500);
   }
 };
@@ -60,15 +59,11 @@ const registerUser = async (ctx, next) => {
 
     const newUser = new User(userInfo);
     await newUser.createUser();
-    ctx.body = JSON.stringify({
-      message: "User is created successfully",
-    });
+    ctx.body = responseBody("User is created successfully");
     ctx.status = HttpStatus.OK;
   } catch (err) {
     ctx.status = 400;
-    ctx.body = JSON.stringify({
-      message: err.message || "ERROR: Creating the user",
-    });
+    ctx.body = responseBody(err.message || "ERROR: Creating the user");
     ctx.throw(HttpStatus.INTERNALSERVER, "ERROR: Creating the user", { err });
   }
 };

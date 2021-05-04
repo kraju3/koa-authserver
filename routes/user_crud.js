@@ -4,7 +4,11 @@ const {
   sendResponseFromStateBody,
   prefixMiddleWare,
 } = require("../middlewares/common.middleware");
-const { deleteUser, updateUser } = require("../middlewares/crud.middleware");
+const {
+  deleteUser,
+  updateUser,
+  validateUpdateData,
+} = require("../middlewares/crud.middleware");
 const userActionRouter = new KoaRouter({
   prefix: "/api/v2/user/crud",
 });
@@ -16,7 +20,7 @@ userActionRouter.get("/", prefixMiddleWare);
 userActionRouter
   .use(jwtVerifyMW)
   .post("/delete", deleteUser)
-  .post("/update", updateUser)
+  .post("/update", validateUpdateData, updateUser)
   .use(sendResponseFromStateBody);
 
 //a common middleware to set the ctx body based on the variable ctx.state.body

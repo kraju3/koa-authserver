@@ -1,5 +1,7 @@
 const logger = require("../configuration/logger");
 const { HttpStatus } = require("../lib/helpers/constants");
+const { responseBody } = require("../lib/helpers/util");
+const { replaceOne } = require("../models/User/User");
 
 module.exports = {
   errorCatching: async (ctx, next) => {
@@ -10,17 +12,26 @@ module.exports = {
     }
   },
   tokenExists: async (ctx, next) => {
-    const token = ctx.request.headers.authorization;
+    const { authorization } = ctx.request.headers;
 
-    const tokenTypeAndValue = token?.split(" ");
+    if (!authorization) {
+      ctx.status = HttpStatus.UNAUTHORIZED;
+      ctx.body = responseBody("Unauthorized,please provide a token");
+      throw new CustomException(
+        "Token was not provided",
+        HttpStatus.UNAUTHORIZED
+      );
+    }
 
-    if (tokenTypeAndValue?.[0] === "Bearer") {
-      ctx.state.token = tokenTypeAndValue[1];
+    const [authType, token] = authorization?.split(" ");
+
+    if (authType === "Bearer") {
+      ctx.state.token = token;
       return next();
     }
 
     ctx.status = HttpStatus.UNAUTHORIZED;
-    ctx.body = "Access token must be provided";
+    ctx.body = responseBody("Access token must be provided");
   },
   sendResponseFromStateBody: async (ctx, next) => {
     ctx.body = ctx.state.body;

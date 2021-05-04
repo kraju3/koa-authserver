@@ -1,7 +1,7 @@
 const Yup = require("yup");
 const { PasswordRegex, PhoneRegex } = require("../../lib/helpers/constants");
 
-module.exports = Yup.object({
+const userValidations = Yup.object({
   userName: Yup.string()
     .min(5, "Username is too short")
     .max(20, "Username is too long")
@@ -39,3 +39,10 @@ module.exports = Yup.object({
     excludeEmptyString: true,
   }),
 });
+
+const updateValidations = userValidations.omit(["userName", "password"]);
+
+module.exports = {
+  userValidations,
+  updateValidations,
+};
