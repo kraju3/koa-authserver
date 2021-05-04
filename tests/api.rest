@@ -1,6 +1,11 @@
-@host=http://localhost:4000/api/v2/user
+@host=http://localhost:4000/
 @accessToken=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3RfdXNlcjEiLCJpYXQiOjE2MjAwODM0MDgsImV4cCI6MTYyMDA4NTIwOH0.TakXfCalmQrg9b5f42qhflzpFjr7sM2rGHjAk14-Qgc
 ### Login request call
+
+###
+GET {{host}} HTTP/1.1
+
+###
 POST {{host}}/login HTTP/1.1
 content-type: application/json
 

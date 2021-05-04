@@ -2,6 +2,7 @@ const KoaRouter = require("@koa/router");
 const { jwtVerifyMW } = require("../middlewares/authentication.middleware");
 const {
   sendResponseFromStateBody,
+  prefixMiddleWare,
 } = require("../middlewares/common.middleware");
 const { deleteUser, updateUser } = require("../middlewares/crud.middleware");
 const userActionRouter = new KoaRouter({
@@ -10,6 +11,8 @@ const userActionRouter = new KoaRouter({
 
 //common middlewares to check token is present and verification before hitting
 //the actual router logic
+userActionRouter.get("/", prefixMiddleWare);
+
 userActionRouter
   .use(jwtVerifyMW)
   .post("/delete", deleteUser)

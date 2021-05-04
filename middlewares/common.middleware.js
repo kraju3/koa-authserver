@@ -26,4 +26,7 @@ module.exports = {
     ctx.body = ctx.state.body;
     await next();
   },
+  prefixMiddleWare: async (ctx, next) => {
+    ctx.status = 200;
+  },
 };

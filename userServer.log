@@ -238,3 +238,50 @@
 [2021-05-03T18:12:22.273] [INFO] default - Deleting the user test_user1
 [2021-05-03T19:08:21.063] [INFO] default - Server started at port 3000
 [2021-05-03T19:08:21.618] [INFO] default - Connected to the User Collection
+[2021-05-03T19:19:47.066] [INFO] default - Server started at port 3000
+[2021-05-03T19:19:47.597] [INFO] default - Connected to the User Collection
+[2021-05-03T19:23:44.150] [INFO] default - Server started at port 3000
+[2021-05-03T19:23:44.713] [INFO] default - Connected to the User Collection
+[2021-05-03T19:25:37.737] [INFO] default - Server started at port 3000
+[2021-05-03T19:25:38.399] [INFO] default - Connected to the User Collection
+[2021-05-03T19:26:08.008] [INFO] default - Server started at port 3000
+[2021-05-03T19:26:08.553] [INFO] default - Connected to the User Collection
+[2021-05-03T19:27:39.020] [INFO] default - Server started at port 3000
+[2021-05-03T19:27:39.560] [INFO] default - Connected to the User Collection
+[2021-05-03T19:29:46.964] [INFO] default - Server started at port 3000
+[2021-05-03T19:29:47.502] [INFO] default - Connected to the User Collection
+[2021-05-03T19:30:48.343] [INFO] default - Server started at port 3000
+[2021-05-03T19:30:49.122] [INFO] default - Connected to the User Collection
+[2021-05-03T19:32:53.238] [INFO] default - Server started at port 3000
+[2021-05-03T19:32:53.890] [INFO] default - Connected to the User Collection
+[2021-05-03T19:33:12.217] [INFO] default - Server started at port 3000
+[2021-05-03T19:33:12.838] [INFO] default - Connected to the User Collection
+[2021-05-03T19:34:51.417] [INFO] default - Server started at port 3000
+[2021-05-03T19:34:52.034] [INFO] default - Connected to the User Collection
+[2021-05-03T19:35:02.911] [INFO] default - Server started at port 3000
+[2021-05-03T19:35:03.621] [INFO] default - Connected to the User Collection
+[2021-05-03T19:36:15.764] [INFO] default - Server started at port 3000
+[2021-05-03T19:36:16.392] [INFO] default - Connected to the User Collection
+[2021-05-03T19:37:25.227] [INFO] default - Server started at port 3000
+[2021-05-03T19:37:25.830] [INFO] default - Connected to the User Collection
+[2021-05-03T19:38:13.985] [INFO] default - Server started at port 3000
+[2021-05-03T19:38:14.569] [INFO] default - Connected to the User Collection
+[2021-05-03T20:01:01.100] [INFO] default - Server started at port 3000
+[2021-05-03T20:01:01.704] [INFO] default - Connected to the User Collection
+[2021-05-03T20:02:36.913] [INFO] default - Server started at port 3000
+[2021-05-03T20:02:37.792] [INFO] default - Connected to the User Collection
+[2021-05-03T20:02:59.741] [ERROR] default - TypeError: prefix.replace is not a function
+    at Router.prefix (C:\Users\kr_319696\Desktop\POC\KoaProject\node_modules\@koa\router\lib\router.js:317:19)
+    at dispatch (C:\Users\kr_319696\Desktop\POC\KoaProject\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\kr_319696\Desktop\POC\KoaProject\node_modules\@koa\router\lib\router.js:372:16
+    at dispatch (C:\Users\kr_319696\Desktop\POC\KoaProject\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\kr_319696\Desktop\POC\KoaProject\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\kr_319696\Desktop\POC\KoaProject\node_modules\@koa\router\lib\router.js:377:31)
+    at dispatch (C:\Users\kr_319696\Desktop\POC\KoaProject\node_modules\koa-compose\index.js:42:32)
+    at errorCatching (C:\Users\kr_319696\Desktop\POC\KoaProject\middlewares\common.middleware.js:7:13)
+    at dispatch (C:\Users\kr_319696\Desktop\POC\KoaProject\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\kr_319696\Desktop\POC\KoaProject\node_modules\koa-body\index.js:148:14
+[2021-05-03T20:06:28.022] [INFO] default - Server started at port 3000
+[2021-05-03T20:06:28.697] [INFO] default - Connected to the User Collection
+[2021-05-03T20:07:53.626] [INFO] default - Creating the user in the database
+[2021-05-03T20:09:07.197] [INFO] default - Deleting the user test_user
