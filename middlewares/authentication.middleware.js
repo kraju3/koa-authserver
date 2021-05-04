@@ -48,7 +48,7 @@ const comparePassword = async (ctx, next) => {
     }
   } catch (err) {
     ctx.status = HttpStatus.INTERNALSERVER;
-    ctx.body = `${err}`;
+    ctx.body = `${err.message ?? "Token invalid"}`;
     throw new CustomException("Password is invalid", HttpStatus.INTERNALSERVER);
   }
 };
