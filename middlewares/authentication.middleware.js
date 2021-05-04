@@ -11,7 +11,10 @@
 const KoaCompose = require("koa-compose");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
-const { sendResponseFromStateBody } = require("./common.middleware");
+const {
+  sendResponseFromStateBody,
+  tokenExists,
+} = require("./common.middleware");
 const { CustomException } = require("../lib/customExceptions");
 const { HttpStatus, JWT_SECRET } = require("../lib/helpers/constants");
 const User = require("../models/User/User");

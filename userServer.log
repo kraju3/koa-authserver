@@ -236,3 +236,5 @@
 [2021-05-03T17:57:48.124] [ERROR] default - CustomException:500-{message: jwt expired}
 [2021-05-03T18:09:13.015] [INFO] default - Creating the user in the database
 [2021-05-03T18:12:22.273] [INFO] default - Deleting the user test_user1
+[2021-05-03T19:08:21.063] [INFO] default - Server started at port 3000
+[2021-05-03T19:08:21.618] [INFO] default - Connected to the User Collection
