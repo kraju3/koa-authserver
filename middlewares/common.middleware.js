@@ -1,7 +1,6 @@
 const logger = require("../configuration/logger");
 const { HttpStatus } = require("../lib/helpers/constants");
 const { responseBody } = require("../lib/helpers/util");
-const { replaceOne } = require("../models/User/User");
 
 module.exports = {
   errorCatching: async (ctx, next) => {
