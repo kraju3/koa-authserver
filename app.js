@@ -23,7 +23,7 @@ commonRouter
 app.use(commonRouter.routes()).use(commonRouter.allowedMethods());
 
 if (!module.parent)
-  app.listen(process.env.HOST_PORT, () => {
-    logger.info(`Server started at port ${process.env.HOST_PORT}`);
+  app.listen(process.env.PORT, () => {
+    logger.info(`Server started at port ${process.env.PORT}`);
     userDb.connect();
   });
