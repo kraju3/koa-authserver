@@ -24,6 +24,6 @@ app.use(commonRouter.routes()).use(commonRouter.allowedMethods());
 
 if (!module.parent)
   app.listen(process.env.HOST_PORT, () => {
-    logger.info("Server started at port 3000");
+    logger.info(`Server started at port ${process.env.HOST_PORT}`);
     userDb.connect();
   });
